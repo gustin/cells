@@ -35,7 +35,7 @@ end
 ActiveSupport::Dependencies.load_paths << RAILS_ROOT+"/app/cells"
 
 # add APP_CELLS_PATH to view_paths:
-Cell::Base.view_paths=([RAILS_ROOT+"/app/cells"])
+Cell::Base.view_paths=([RAILS_ROOT+"/app/views", RAILS_ROOT+"/app/cells"])
 
 
 # add engine-cells view/code paths, once at server start.
